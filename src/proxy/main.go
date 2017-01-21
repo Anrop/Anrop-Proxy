@@ -9,6 +9,8 @@ import (
 	"github.com/elazarl/goproxy"
 )
 
+const host = "anrop.se.preview.citynetwork.se"
+
 func main() {
 	port := os.Getenv("PORT")
 
@@ -19,7 +21,7 @@ func main() {
 	proxy := goproxy.NewProxyHttpServer()
 	proxy.OnRequest().DoFunc(
 		func(r *http.Request, ctx *goproxy.ProxyCtx) (*http.Request, *http.Response) {
-			r.Host = "anrop.se"
+			r.Host = host
 			return r, nil
 		})
 	proxy.NonproxyHandler = http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
@@ -28,7 +30,7 @@ func main() {
 			return
 		}
 		req.URL.Scheme = "http"
-		req.URL.Host = "anrop.se"
+		req.URL.Host = host
 		proxy.ServeHTTP(w, req)
 	})
 	proxy.Verbose = true
