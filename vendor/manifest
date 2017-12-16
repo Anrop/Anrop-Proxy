@@ -4,19 +4,13 @@
 		{
 			"importpath": "github.com/elazarl/goproxy",
 			"repository": "https://github.com/elazarl/goproxy",
-			"revision": "f3332c8f2afcea085efab6519d91ccc2ac1251f1",
-			"branch": "master"
-		},
-		{
-			"importpath": "github.com/elazarl/goproxy.git",
-			"repository": "https://github.com/elazarl/goproxy.git",
-			"revision": "f3332c8f2afcea085efab6519d91ccc2ac1251f1",
+			"revision": "a96fa3a318260eab29abaf32f7128c9eb07fb073",
 			"branch": "master"
 		},
 		{
 			"importpath": "github.com/inconshreveable/go-vhost",
 			"repository": "https://github.com/inconshreveable/go-vhost",
-			"revision": "8cbc5089df5ba3e44644d39e8d1ec375d6d842f9",
+			"revision": "06d84117953b22058c096b49a429ebd4f3d3d97b",
 			"branch": "master"
 		},
 		{
